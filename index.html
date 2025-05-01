@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <br>
+  <!-- Basic Page Needs
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>SGAligner++</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" href="https://img.icons8.com/bubbles/100/t-shirt.png">
+  <link rel="stylesheet" href="css/footable.standalone.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+  <!-- Favicon
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="static/images/Logo.png">
+
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Slider -->
+  <link rel="stylesheet" href="css/dics.css">
+  <script src="js/dics.js"></script>
+
+  <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+  <style>
+    img {
+      display: block;
+    }
+
+    .column-50 {
+      float: left;
+      width: 50%;
+    }
+
+    .row-50:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .floating-teaser {
+      float: left;
+      width: 30%;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .venue strong {
+      color: #99324b;
+    }
+
+    .benchmark {
+      width: 100%;
+      max-width: 960px;
+      overflow: scroll;
+      overflow-y: hidden;
+    }
+
+    @media (min-width: 550px) {
+      .column.has-text-centered {
+        margin-left: 0 !important;
+      }
+    }
+
+    .publication-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .link-block {
+      display: inline-block;
+    }
+
+    .external-link {
+      display: flex;
+      align-items: center;
+      background-color: #363636;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: none;
+    }
+
+    .external-link .icon {
+      margin-right: 6px;
+    }
+
+    .external-link .icon i {
+      font-size: 16px;
+    }
+
+    .external-link:hover {
+      background-color: #4a4a4a;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .logo {
+        width: 70px;
+        height: auto;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="header-container">
+      <!-- <img src="static/images/Logo.png" alt="CrossOver Logo" class="logo"> -->
+      <h1 class="title is-1 publication-title"><b>SGAligner++</b></h1>
+    </div>
+    <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0; font-size: 40px;" align="center"><b>Cross-Modal Language-Aided 3D Scene Graph Alignment</b></h2>
+    <br>
+    <p align="center" , style="margin-bottom:12px;">
+      <a class="simple" href="https://bsingh.github.io">Binod Singh</a><sup>1*</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://sayands.github.io">Sayan Deb Sarkar</a><sup>2*</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://ir0.github.io/">Iro Armeni</a><sup>2</sup>
+    </p>
+
+    <p align="center" style="margin-bottom:20px;">
+      <sup>1</sup>Technical University of Munich
+      <span style="display:inline-block; width: 32px"></span>
+      <sup>2</sup>Stanford University
+      <span style="display:inline-block; width: 32px"></span>
+      
+    </p>
+
+    <p align="center" style="margin-bottom:20px;">
+      <sup>*</sup>Equal Contribution
+      <span style="display:inline-block; width: 32px"></span>
+    </p>
+
+    <!-- <h5 align="center" style="color: hsl(331, 94%, 50%);"> <strong>CVPR 2025 Highlight</strong></h5> -->
+
+
+    <!-- Additional Links Section -->
+    <div class="column has-text-centered">
+      <div class="publication-links">
+        <!-- arXiv Link -->
+        <span class="link-block">
+          <a href="https://arxiv.org/abs/2502.15011" target="_blank" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+          </a>
+        </span>
+        <!-- Code Link -->
+        <span class="link-block">
+          <a target="_blank" href="https://github.com/GradientSpaces/sgpp/" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </span>
+        <!-- Video Link -->
+        <span class="link-block">
+          <a target="_blank" href="https://youtu.be/8SEoQyaHuKs" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <span>Video</span>
+          </a>
+
+      </div>
+    </div>
+
+    <figure>
+      <img src="static/videos/teaser.gif" style="width:100%"></img>
+      <!-- <br> -->
+    </figure>
+    <div class="caption">
+      <h6 align="center">TL;DR; <b>CrossOver</b> is a cross-modal alignment method for 3D scenes that learns a unified, modality-agnostic embedding space, 
+      enabling scene-level alignment without semantic annotations.</h6>
+      <br>
+      <br>
+    </div>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5><b>Video</b></h5>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/8SEoQyaHuKs" allow="autoplay; encrypted-media"></iframe>
+      </div>
+    </div>
+    
+    <br> <br>
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5><b>Abstract</b></h5>
+      <p align="justify">
+        We introduce <strong>SGAligner++</strong>, a cross-modal,
+        language-aided framework for 3D scene graph alignment. Our
+        method addresses the challenge of aligning partially overlapping
+        scene observations across heterogeneous modalities—<em>
+        point clouds, CAD meshes, open-vocabulary captions, and
+        spatial referrals</em>—by learning a unified joint embedding space.
+        <strong>SGAligner++</strong> leverages lightweight uni-modal encoders and
+        attention-based fusion to generate robust object representations,
+        and employs contrastive losses for alignment under noise, low
+        overlap, and modality variation. A language model further
+        disambiguates spatial relationships, enabling accurate edge
+        mapping and scene graph merging. Extensive experiments on
+        <em>ScanNet</em> and <em>3RScan</em> demonstrate that <strong>SGAligner++</strong> significantly
+        outperforms state-of-the-art methods in both ground truth and
+        predicted settings, while remaining computationally efficient.
+        Our approach enables scalable, real-world deployment for tasks
+        such as semantic SLAM, visual localization, and robotic scene
+        understanding.
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div class="section">
+      <h5><b>Method</b></h5>
+      <figure>
+        <img src="static/images/architecture.png" style="width:100%"></img>
+        <!-- <br> -->
+      </figure>
+      <p align="justify">
+        Given a scene and its instances represented across different modalities, namely, images, point clouds, cad meshes, text referrals and floorplans, 
+        the goal is to align all modalities within a shared embedding space. The <em>Instance-Level Multimodal Interaction</em> module 
+        learns a multi-modal embedding space for independent object instances. It captures modality interactions at the instance level 
+        within the context of a scene, using spatial pairwise relationships between the object instances.
+
+        This is further enhanced by the <em>Scene-Level Multimodal Interaction</em> module, 
+        which jointly processes all instances to represent the scene with a single feature vector Fs. The instance and the scene modules provide a unified, 
+        modality-agnostic embedding space; however, it requires semantic instance information that is consistent across modalities during inference, 
+        which is challenging to obtain in practice. The <em>Unified Dimensionality Encoders</em>
+        eliminate dependency on precise semantic instance information by learning to process each scene modality independently while 
+        interacting with the feature vector Fs, thus, progressively building a modality-agnostic embedding space.  
+      </p>
+    </div>
+
+    <div class="section">
+      <h5><b>Cross-Modal Inference Pipeline</b></h5>
+      <figure>
+        <img src="static/images/inference.png" style="width:100%"></img>
+        <!-- <br> -->
+      </figure>
+      <p align="justify">
+        During inference for scene retrieval, we use our unified dimensionality encoders. Given point cloud as the query modality that represents the scene, we extract a
+        feature vector F3D in the shared embedding space. To find the most similar 2D floorplan from a database, we locate the closest feature F2D and 
+        retrieve the corresponding scene.
+      </p>
+    </div>
+
+    <div class="section">
+      <h5><b>Qualitative Results</b></h5>
+      <p>
+        Given a scene in query modality <em>floorplan</em>, we aim to retrieve the same scene in target modality <em>point cloud</em>.
+      </p>
+
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="static/images/results/quals_scannet1.png" alt="Slide 1">
+          <img src="static/images/results/quals_scannet2.png" alt="Slide 2">
+          <img src="static/images/results/quals_3rscan1.png" alt="Slide 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      
+      <script src="js/carousel.js"></script>
+      
+    </div>
+
+    <br> <br>
+    <div class="section">
+      <h5><b>Citation</b></h5>
+      <pre style="margin:0"><code>@inproceedings{sarkar2025crossover,
+        author={Sayan Deb Sarkar and Ondrej Miksik and Marc Pollefeys and Daniel Barath and Iro Armeni},
+        title={CrossOver: 3D Scene Cross-Modal Alignment}, 
+        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+        year = {2025}
+      }</code></pre>
+    </div>
+
+    <!-- <br> <br>
+    <div class="section">
+      <h5> <b>Acknowledgements</b> </h5>
+      This work was partially funded by the ETH RobotX research grant. We thank Tao Sun and Jianhao Zheng for the fruitful discussions.
+    </div> -->
+
+    <br> <br>
+    <footer class="footer">
+      <p align="justify"> 
+        The website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+        This webpage template is from <a href="https://georgenakayama.github.io/AIpparel/">AIpparel</a>.  
+      </p>
+    </footer>
+
+
+    <!-- </div> -->
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/footable.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(function ($) {
+        $('.table').footable();
+      });
+    </script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', domReady);
+
+      function domReady() {
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[0],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[1],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[2],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[3],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+      }
+    </script>
+
+    <!-- End Document
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
