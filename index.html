@@ -251,20 +251,13 @@
         <!-- <br> -->
       </figure>
       <p align="justify">
-        Given a scene and its instances represented across different modalities, namely, images, point clouds, cad meshes, text referrals and floorplans, 
-        the goal is to align all modalities within a shared embedding space. The <em>Instance-Level Multimodal Interaction</em> module 
-        learns a multi-modal embedding space for independent object instances. It captures modality interactions at the instance level 
-        within the context of a scene, using spatial pairwise relationships between the object instances.
+       
 
-        This is further enhanced by the <em>Scene-Level Multimodal Interaction</em> module, 
-        which jointly processes all instances to represent the scene with a single feature vector Fs. The instance and the scene modules provide a unified, 
-        modality-agnostic embedding space; however, it requires semantic instance information that is consistent across modalities during inference, 
-        which is challenging to obtain in practice. The <em>Unified Dimensionality Encoders</em>
-        eliminate dependency on precise semantic instance information by learning to process each scene modality independently while 
-        interacting with the feature vector Fs, thus, progressively building a modality-agnostic embedding space.  
+
+
       </p>
     </div>
-
+<!-- 
     <div class="section">
       <h5><b>Cross-Modal Inference Pipeline</b></h5>
       <figure>
@@ -272,11 +265,11 @@
         <!-- <br> -->
       </figure>
       <p align="justify">
-        During inference for scene retrieval, we use our unified dimensionality encoders. Given point cloud as the query modality that represents the scene, we extract a
-        feature vector F3D in the shared embedding space. To find the most similar 2D floorplan from a database, we locate the closest feature F2D and 
-        retrieve the corresponding scene.
+        
+        
+
       </p>
-    </div>
+    </div> -->
 
     <div class="section">
       <h5><b>Qualitative Results</b></h5>
