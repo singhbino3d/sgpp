@@ -219,24 +219,24 @@
     <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
       <h5><b>Abstract</b></h5>
       <p align="justify">
-        We introduce <strong>SGAligner++</strong>, a cross-modal,
-        language-aided framework for 3D scene graph alignment. Our
-        method addresses the challenge of aligning partially overlapping
-        scene observations across heterogeneous modalities—<em>
-        point clouds, CAD meshes, open-vocabulary captions, and
-        spatial referrals</em>—by learning a unified joint embedding space.
-        <strong>SGAligner++</strong> leverages lightweight uni-modal encoders and
-        attention-based fusion to generate robust object representations,
-        and employs contrastive losses for alignment under noise, low
-        overlap, and modality variation. A language model further
-        disambiguates spatial relationships, enabling accurate edge
-        mapping and scene graph merging. Extensive experiments on
-        <em>ScanNet</em> and <em>3RScan</em> demonstrate that <strong>SGAligner++</strong> significantly
-        outperforms state-of-the-art methods in both ground truth and
-        predicted settings, while remaining computationally efficient.
-        Our approach enables scalable, real-world deployment for tasks
-        such as semantic SLAM, visual localization, and robotic scene
-        understanding.
+        Aligning 3D scene graphs is a crucial initial step
+        for several applications in robot navigation and embodied
+        perception. Current methods in 3D scene graph alignment
+        often rely on single-modality point cloud data and struggle
+        with incomplete or noisy input. We introduce <strong>SGAligner++</strong>,
+        a cross-modal, language-aided framework for 3D scene graph
+        alignment. Our method addresses the challenge of aligning
+        partially overlapping scene observations across heterogeneous
+        modalities by learning a unified joint embedding space, enabling
+        accurate alignment even under low-overlap conditions and
+        sensor noise. By employing lightweight unimodal encoders and
+        attention-based fusion, <strong>SGAligner++</strong> enhances scene under-
+        standing for tasks such as <em>visual localization, 3D reconstruc-
+        tion, and navigation</em>, while ensuring scalability and minimal
+        computational overhead. Extensive evaluations on real-world
+        datasets demonstrate that <strong>SGAligner++</strong> outperforms state-of-
+        the-art methods in precision and cross-modal generalization
+
         <br>
         <br>
       </p>
