@@ -138,30 +138,24 @@
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="header-container">
-      <!-- <img src="static/images/Logo.png" alt="CrossOver Logo" class="logo"> -->
-      <h1 class="title is-1 publication-title"><b>SGAligner++</b></h1>
+    <h1 class="title is-1 publication-title"><b>SGAligner++</b></h1>
     </div>
     <h2 class="title is-2 publication-title" style="margin-top: 0; margin-bottom: 0; font-size: 40px;" align="center"><b>Cross-Modal Language-Aided 3D Scene Graph Alignment</b></h2>
     <br>
     <p align="center" , style="margin-bottom:12px;">
-      <a class="simple" href="https://singhbino3d.github.io">Binod Singh</a><sup>1*</sup>
+      <a class="simple" style="font-weight:bold;" href="https://singhbino3d.github.io">Binod Singh</a><sup>1</sup>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="simple" href="https://sayands.github.io">Sayan Deb Sarkar</a><sup>2*</sup>
+      <a class="simple" style="font-weight:bold;" href="https://sayands.github.io">Sayan Deb Sarkar</a><sup>2</sup>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="simple" href="https://ir0.github.io/">Iro Armeni</a><sup>2</sup>
+      <a class="simple" style="font-weight:bold;" href="https://ir0.github.io/">Iro Armeni</a><sup>2</sup>
     </p>
 
-    <p align="center" style="margin-bottom:20px;">
+    <p align="center" style="margin-bottom:20px; font-weight:bold;">
       <sup>1</sup>Technical University of Munich
-      <span style="display:inline-block; width: 32px"></span>
+      <span style=" display:inline-block; width: 32px"></span>
       <sup>2</sup>Stanford University
       <span style="display:inline-block; width: 32px"></span>
       
-    </p>
-
-    <p align="center" style="margin-bottom:20px;">
-      <sup>*</sup>Equal Contribution
-      <span style="display:inline-block; width: 32px"></span>
     </p>
 
    
@@ -198,6 +192,9 @@
       </div>
     </div>
 
+    
+    
+    
     <figure>
       <img src="static/videos/teaser.gif" style="width:100%"></img>
       <!-- <br> -->
@@ -208,40 +205,49 @@
       <br>
     </div>
 
-    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
-      <h5><b>Video</b></h5>
-      <div class="publication-video">
-        <iframe src="" allow="autoplay; encrypted-media"></iframe>
-      </div>
+    <!-- Wrapper only for Video + Abstract -->
+<div style="display: flex; max-width: 1200px; margin: 0 auto; gap: 20px; align-items: flex-start;">
+
+   <div style="flex: 1; padding: 10px;">
+    <h5><b>Abstract</b></h5>
+    <p align="justify">
+      Aligning 3D scene graphs is a crucial initial step for several applications in robot navigation 
+      and embodied perception. Current methods in 3D scene graph alignment often rely on single-modality 
+      point cloud data and struggle with incomplete or noisy input. We introduce <strong>SGAligner++</strong>, 
+      a cross-modal, language-aided framework for 3D scene graph alignment. Our method addresses the 
+      challenge of aligning partially overlapping scene observations across heterogeneous modalities by 
+      learning a unified joint embedding space, enabling accurate alignment even under low-overlap conditions 
+      and sensor noise. By employing lightweight unimodal encoders and attention-based fusion, 
+      <strong>SGAligner++</strong> enhances scene understanding for tasks such as <em>visual localization, 
+        3D reconstruction, and navigation</em>, while ensuring scalability and minimal computational overhead. 
+        Extensive evaluations on real-world datasets demonstrate that <strong>SGAligner++</strong> outperforms 
+        state-of-the-art methods in precision and cross-modal generalization.
+    </p>
+  </div>
+
+  <div style="flex: 1; padding: 10px;">
+    <h5><b>Video</b></h5>
+    <div class="publication-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen
+        style="position: absolute; top:0; left:0; width:100%; height:100%;">
+      </iframe>
     </div>
+  </div>
+ 
+</div>
+
     
-    <br> <br>
-    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
-      <h5><b>Abstract</b></h5>
-      <p align="justify">
-        Aligning 3D scene graphs is a crucial initial step
-        for several applications in robot navigation and embodied
-        perception. Current methods in 3D scene graph alignment
-        often rely on single-modality point cloud data and struggle
-        with incomplete or noisy input. We introduce <strong>SGAligner++</strong>,
-        a cross-modal, language-aided framework for 3D scene graph
-        alignment. Our method addresses the challenge of aligning
-        partially overlapping scene observations across heterogeneous
-        modalities by learning a unified joint embedding space, enabling
-        accurate alignment even under low-overlap conditions and
-        sensor noise. By employing lightweight unimodal encoders and
-        attention-based fusion, <strong>SGAligner++</strong> enhances scene under-
-        standing for tasks such as <em>visual localization, 3D reconstruc-
-        tion, and navigation</em>, while ensuring scalability and minimal
-        computational overhead. Extensive evaluations on real-world
-        datasets demonstrate that <strong>SGAligner++</strong> outperforms state-of-
-        the-art methods in precision and cross-modal generalization
 
-        <br>
-        <br>
-      </p>
-    </div>
 
+
+
+
+
+   
     <div class="section">
       <h5><b>Method</b></h5>
       <figure>
@@ -249,30 +255,31 @@
         <!-- <br> -->
       </figure>
       <p align="justify">
-       
-
-
-
+       Given two scenes s1 and s2, with spatially overlapping instances 
+       (<span style="color: rgb(255, 102, 102, 1);">RED arrow</span> denotes some overlapping objects),
+       and their multimodal scene graphs which include, 
+        <b>Structure:</b> Denotes spatial location in the scene,
+        <b>Point Cloud:</b> Point cloud representation of an object instance,
+        <b>CAD Mesh:</b> Matching CAD model,
+        <b>Caption:</b> Text caption describing the object,
+        <b>Referral:</b> Contextual relationship between two instances in an open-vocabulary form,
+        
+        <strong>SGAligner++</strong> employs specialized unimodal encoders: 
+        <b> Struture Encoder</b>, <b>3D Encoder</b>, <b>Caption Encoder</b>, <b>Referral Encoder</b>,
+        where they transform the diverse input modalities into a joint embeding space, where similar object 
+        instances are brought closer and dissimilar ones are pushed apart. This way it can match common instances 
+        across scenes, even if the scenes are represented in different modaltities (point cloud in one and CAD mesh 
+        in the other). From the matched instances, a unified scene graph combining information from both 
+        maps into a richer and more complete representation is constructed. 
       </p>
     </div>
-<!-- 
-    <div class="section">
-      <h5><b>Cross-Modal Inference Pipeline</b></h5>
-      <figure>
-        <img src="static/images/inference.png" style="width:100%"></img>
-        <!-- <br> -->
-      <!-- </figure>
-      <p align="justify">
-        
 
 
-      </p>
-    </div>  -->
 
     <div class="section">
       <h5><b>Qualitative Results</b></h5>
       <p>
-        
+        Given two scenes, we aim to retrieve the same object instances across them.
       </p>
 
       <div class="carousel-container">
