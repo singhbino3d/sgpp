@@ -22,6 +22,7 @@
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/slider.css">
   <link rel="icon" href="https://img.icons8.com/bubbles/100/t-shirt.png">
   <link rel="stylesheet" href="css/footable.standalone.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -158,39 +159,40 @@
       
     </p>
 
-   
-    <!-- Additional Links Section -->
-    <div class="column has-text-centered">
-      <div class="publication-links">
-        <!-- arXiv Link -->
-        <span class="link-block">
-          <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="ai ai-arxiv"></i>
-            </span>
-            <span>arXiv</span>
-          </a>
+  <!-- Additional Links Section -->
+<div class="column has-text-centered">
+  <div class="publication-links">
+    <!-- arXiv Link -->
+    <span class="link-block">
+      <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+          <i class="ai ai-arxiv"></i>
         </span>
-        <!-- Code Link -->
-        <span class="link-block">
-          <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Code(Coming Soon)</span>
-          </a>
-        </span>
-        <!-- Video Link -->
-        <span class="link-block">
-          <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-              <i class="fab fa-youtube"></i>
-            </span>
-            <span>Video</span>
-          </a>
+        <span>arXiv</span>
+      </a>
+    </span>
 
-      </div>
-    </div>
+    <!-- Code Link -->
+    <span class="link-block">
+      <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>Code(Coming Soon)</span>
+      </a>
+    </span>
+
+    <!-- Video Link -->
+    <span class="link-block">
+      <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+        <span class="icon">
+          <i class="fab fa-youtube"></i>
+        </span>
+        <span>Video</span>
+      </a>
+    </span>
+  </div>
+</div>
 
     
     
@@ -274,9 +276,50 @@
       </p>
     </div>
 
+    <br> <br>
+
+  <div class="section">
+  <h5><b>Qualitative Results</b></h5>
+  <p>
+    Given two scenes, we aim to retrieve the same object instances across them.
+  </p>
+
+  <!-- Dots ABOVE -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+  <!-- Image carousel -->
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="static/images/results/quals_scannet1.png" alt="Slide 1">
+      <img src="static/images/results/quals_scannet2.png" alt="Slide 2">
+      <img src="static/images/results/quals_3rscan1.png" alt="Slide 3">
+    </div>
+  </div>
+
+  <script src="js/carousel.js"></script>
+</div>
 
 
-    <div class="section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="section">
       <h5><b>Qualitative Results</b></h5>
       <p>
         Given two scenes, we aim to retrieve the same object instances across them.
@@ -294,7 +337,7 @@
       
       <script src="js/carousel.js"></script>
       
-    </div>
+    </div> -->
 
     <br> <br>
     <div class="section">
