@@ -16,7 +16,8 @@
 
   <!-- FONT
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700" rel="stylesheet" type="text/css">
 
   <!-- CSS
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -207,10 +208,10 @@
       <br>
     </div>
 
-    <!-- Wrapper only for Video + Abstract -->
-<div style="display: flex; max-width: 1200px; margin: 0 auto; gap: 20px; align-items: flex-start;">
+ 
+<div style="max-width: 1200px; margin: 0 auto">
 
-   <div style="flex: 1; padding: 10px;">
+   <div style="padding: 10px;">
     <h5><b>Abstract</b></h5>
     <p align="justify">
       Aligning 3D scene graphs is a crucial initial step for several applications in robot navigation 
@@ -227,7 +228,7 @@
     </p>
   </div>
 
-  <div style="flex: 1; padding: 10px;">
+  <div style="padding: 10px; margin-bottom: 20px;">
     <h5><b>Video</b></h5>
     <div class="publication-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe 
@@ -240,16 +241,9 @@
     </div>
   </div>
  
-</div>
 
-    
+  
 
-
-
-
-
-
-   
     <div class="section">
       <h5><b>Method</b></h5>
       <figure>
@@ -259,12 +253,14 @@
       <p align="justify">
        Given two scenes s1 and s2, with spatially overlapping instances 
        (<span style="color: rgb(255, 102, 102, 1);">RED arrow</span> denotes some overlapping objects),
-       and their multimodal scene graphs which include, 
-        <b>Structure:</b> Denotes spatial location in the scene,
-        <b>Point Cloud:</b> Point cloud representation of an object instance,
-        <b>CAD Mesh:</b> Matching CAD model,
-        <b>Caption:</b> Text caption describing the object,
-        <b>Referral:</b> Contextual relationship between two instances in an open-vocabulary form,
+       and their multimodal scene graphs which include:
+       <ul style="list-style: none; padding-left: 30px;"> 
+        <li><b>Structure:</b> Denotes spatial location in the scene</li>
+        <li><b>Point Cloud:</b> Point cloud representation of an object instance</li>
+        <li><b>CAD Mesh:</b> Matching CAD model</li>
+        <li><b>Caption:</b> Text caption describing the object</li>
+        <li><b>Referral:</b> Contextual relationship between two instances in an open-vocabulary form</li>
+      </ul>
         
         <strong>SGAligner++</strong> employs specialized unimodal encoders: 
         <b> Struture Encoder</b>, <b>3D Encoder</b>, <b>Caption Encoder</b>, <b>Referral Encoder</b>,
@@ -276,22 +272,19 @@
       </p>
     </div>
 
-    <br> <br>
-
   <div class="section">
   <h5><b>Qualitative Results</b></h5>
   <p>
     Given two scenes, we aim to retrieve the same object instances across them.
   </p>
 
-  <!-- Dots ABOVE -->
   <div class="dots">
     <span class="dot" onclick="currentSlide(0)"></span>
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
   </div>
 
-  <!-- Image carousel -->
+ 
   <div class="carousel-container">
     <div class="carousel-slide">
       <img src="static/images/results/quals_scannet1.png" alt="Slide 1">
