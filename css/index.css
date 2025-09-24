@@ -94,6 +94,24 @@
   font-weight: bold; /* ensure text is bold */
 }
 
+.link-block a.coming-soon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;       /* same width as gradient buttons */
+  padding: 0.85rem 1.6rem;/* same padding */
+  gap: 0.5rem;            /* space between icon and text */
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 999px;   /* fully rounded */
+  background-color: #4b5563; /* gray for coming soon */
+  color: #f3f4f6;         /* light text */
+  cursor: default;         
+  pointer-events: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* optional shadow */
+}
+
 
 .hero.is-landing {
   position: relative;
