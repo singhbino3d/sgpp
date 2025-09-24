@@ -9,6 +9,19 @@
     opacity: 0.9;
 }
 
+.coming-soon {
+    background-color: #4b5563; /* dark gray */
+    color: #f3f4f6;            /* light gray text */
+    border: none;
+    cursor: default;           /* no pointer cursor */
+    pointer-events: none;      /* disable clicking */
+}
+
+.coming-soon:hover {
+    opacity: 1;                /* no hover effect */
+}
+
+
 .title {
     color: #363636;
     font-size: 2rem;
