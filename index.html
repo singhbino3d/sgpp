@@ -194,11 +194,11 @@
 </head>
 
 <body style="position: relative; background: radial-gradient(120% 120% at 20% 0%,
-                                                            #EEF4D4 0%, 
-                                                            rgba(218, 239, 179, 0.3) 50%, 
+                                                            rgb(238, 244, 212, 0.3) 0%, 
+                                                            rgba(218, 239, 179, 0.1) 50%, 
                                                             #ffffff 100%); overflow-x: hidden;" >
 
-  <div style="
+  <!-- <div style="
       position: absolute;
       top: -160px; 
       right: -120px; 
@@ -207,8 +207,8 @@
       border-radius: 50%;
       background: radial-gradient(circle at center, rgba(218, 239, 179, 0.8), rgba(238, 244, 212, 0.1));
       z-index: 0;">
-  </div>
-
+  </div> --!>
+  
   <div style="
       position: absolute;
       bottom: -120px; 
@@ -216,9 +216,9 @@
       width: 360px; 
       height: 360px; 
       border-radius: 50%;
-      background: radial-gradient(circle at center, rgba(218, 239, 179, 0.8), rgba(238, 244, 212, 0.25));
+      background: radial-gradient(circle at center, rgba(218, 239, 179, 0), rgba(238, 244, 212, 0));
       z-index: 0;">
-  </div>
+  </div> 
         
   <div class="container">
    
@@ -274,7 +274,7 @@
             <span class="icon">
               <i class="fab fa-github"></i>
             </span>
-            <span>code</span>
+            <span>Code</span>
           </a>
         </span>
 
@@ -284,7 +284,7 @@
             <span class="icon">
               <i class="fab fa-youtube"></i>
             </span>
-            <span>video</span>
+            <span>Video</span>
           </a>
         </span>
       </div>
@@ -356,11 +356,13 @@
       <h5 class="section-title"><b>Method</b></h5>
       <figure>
         <img src="static/images/architecture.png" style="width:100%; "></img>
+        <figcaption style="text-align: center;">
+          <span style="color: rgb(255, 102, 102, 1);">RED arrow</span> denotes some overlapping objects
+        </figcaption>
       </figure>
       <p align="justify" style="margin-bottom: 5px;">
-       Given two scenes s1 and s2, with spatially overlapping instances 
-       (<span style="color: rgb(255, 102, 102, 1);">RED arrow</span> denotes some overlapping objects),
-       and their multimodal scene graphs which include:
+       Given two scenes s1 and s2, with spatially overlapping instances, and their multimodal scene graphs 
+       comprising:
        </p>
        <ul style="list-style: none; padding-left: 30px; margin-top: 0; margin-bottom: 5px; line-height: 1.3;"> 
         <li><b>Structure:</b> Denotes spatial location in the scene</li>
@@ -392,11 +394,11 @@
       by that method.</p> 
     
     <p><b>Note:</b> In our approach, all available modalities were used to retreive object instances.
-    The objects shown in the images, marked with red arrows and numbers, represent only a subset of 
-    common instances; the shown common objects in scene 1 are used as queries.  
-    Certain instances, marked with letters, 
-    which may or may not be present in both scenes, illustrate cases where the method retrieves 
-    outside the current set of common object instances.
+    The objects shown in the images, marked with arrows and numbers, represent only a subset of 
+    common instances. The common objects in scene 1 are used as queries. 
+
+    Certain instances, marked with letters, which may or may not be present in both scenes, 
+    illustrate cases where the method retrieves outside the current set of common object instances.
 
   </p>
   
@@ -419,10 +421,13 @@
   <script src="js/carousel.js"></script>
 </div>
 
+<!-- <div class="section" style="margin-top: 20px;">
+      <h5 class="section-title"><b>Citation</b></h5>
+</div> -->
 
+ <!-- <div class="citation-box" ">
 
-
-
+  </div> -->
 
 
 
@@ -436,8 +441,6 @@
         This webpage template is based on <a href="https://rectified-pointflow.github.io/">RPF</a> 
         and <a href="https://georgenakayama.github.io/AIpparel/">AIpparel</a> and licensed under 
         <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA-4.0</a>.
-
-    
       </p>
     </footer>
 
