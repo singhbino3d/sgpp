@@ -18,8 +18,13 @@
     transition: none;     /* disable clicking */
 }
 
-.coming-soon:hover {
-    opacity: 1;                /* no hover effect */
+.coming-soon:hover,
+.coming-soon:focus,
+.coming-soon:active,
+.coming-soon:visited {
+    opacity: 1;       
+    background-color: #4b5563; /* dark gray */
+    color: #f3f4f6;          /* no hover effect */
     transform:none;
   }
 
