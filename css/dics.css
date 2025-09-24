@@ -297,5 +297,6 @@ opacity: 0.5;
     background-color: #f8f8f8; /* Off-white color */
     padding: 20px;
     text-align: center;
+    box-shadow: 0 20px 10px rgba(0,0,0,0.08);
     /* Additional styling as needed */
   }
