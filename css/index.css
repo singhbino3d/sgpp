@@ -14,12 +14,14 @@
     color: #f3f4f6;            /* light gray text */
     border: none;
     cursor: default;           /* no pointer cursor */
-    pointer-events: none;      /* disable clicking */
+    pointer-events: none; 
+    transition: none;     /* disable clicking */
 }
 
 .coming-soon:hover {
     opacity: 1;                /* no hover effect */
-}
+    transform:none;
+  }
 
 
 .title {
