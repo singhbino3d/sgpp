@@ -1,5 +1,5 @@
 .gradient-button {
-    background: linear-gradient(180deg, #6366f1, #a855f7);
+    background: linear-gradient(180deg, #EA9E8D, #D64550);
     color: white; 
     border: none; 
     /* font-weight: bold; */
@@ -30,7 +30,7 @@
 
 
 .title {
-    color: #363636;
+    color: #1c2826;
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.125;
@@ -40,7 +40,7 @@
     position: relative;
     padding-left: 15px; 
     display: inline-block; 
-    color: #1e3a8a;
+    color: #557619;
 }
 
 
@@ -52,7 +52,7 @@
     width: 6px;
     height: 100%;
     border-radius: 999px;
-    background: linear-gradient(180deg, #6366f1, #a855f7);}
+    background: linear-gradient(180deg, #ADDb57, #86b927);}
 
 .hero-links {
   display: flex;
@@ -73,14 +73,14 @@
   text-decoration: none;
   color: #fff;
   border-radius: 999px;    /* fully rounded */
-  background: linear-gradient(135deg, #4338ca, #6366f1);
-  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.5);
+  background: linear-gradient(135deg, #7aa824, #9cd435);
+  box-shadow: 0 8px 20px rgba(165, 216, 70, 0.5);
   transition: all 0.2s ease;
 }
 
 .link-block a.gradient-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.7);
+  box-shadow: 0 8px 20px rgba(165, 216, 70, 0.8);
 }
 
 .link-block a.gradient-button .icon {
