@@ -369,11 +369,11 @@
         <li><b>Point Cloud:</b> Point cloud representation of an object instance</li>
         <li><b>CAD Mesh:</b> Matching CAD model</li>
         <li><b>Caption:</b> Text caption describing the object</li>
-        <li><b>Referral:</b> Contextual relationship between two instances in an open-vocabulary form</li>
+        <li><b>Referral:</b> Open-vocabulary contextual spatial relationship between two instances</li>
       </ul>
       <p align="justify">
         <strong>SGAligner++</strong> employs specialized unimodal encoders: 
-        <b> Struture Encoder</b>, <b>3D Encoder</b>, <b>Caption Encoder</b>, <b>Referral Encoder</b>,
+        <em> Struture Encoder</em>, <em>3D Encoder</em>, <em>Caption Encoder</em>, <em>Referral Encoder</em>,
         where they transform the diverse input modalities into a joint embeding space, where similar object 
         instances are brought closer and dissimilar ones are pushed apart. This way it can match common instances 
         across scenes, even if the scenes are represented in different modaltities (point cloud in one and CAD mesh 
