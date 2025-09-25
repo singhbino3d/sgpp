@@ -294,7 +294,6 @@ opacity: 0.5;
 }
 
 .footer, .citation-box {
-    height: 60px;
     background-color: #f8f8f8; /* Off-white color */
     padding: 20px;
     text-align: center;
